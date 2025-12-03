@@ -25,7 +25,7 @@ fs.readFile("puzzle_01//src//input.txt", "utf8", (err, data) => {  //lê o arqui
             count += 1;//incrementa a contagem
         }
     } 
-    console.log("Password(Número de vezes que voltou à posição 0):", count);//imprime o resultado
+    console.log("Password (Número de vezes que voltou à posição 0):", count);//imprime o resultado
     return;
 });
     
