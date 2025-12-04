@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\puzzle_02\\src\\puzzle_02_part02.js",
+            "program": "${workspaceFolder}\\puzzle_01\\src\\puzzle_01_part01.js",
             "runtimeExecutable": "C:/Program Files/nodejs/node.exe",
             "console": "integratedTerminal"
         }
