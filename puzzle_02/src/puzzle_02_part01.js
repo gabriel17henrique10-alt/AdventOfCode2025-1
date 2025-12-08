@@ -1,4 +1,3 @@
-const { parse } = require('path');
 const varID = require('./varID.js');
 
 const IDs = varID.split(',');

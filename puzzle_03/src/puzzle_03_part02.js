@@ -40,3 +40,5 @@ for (let bank of bankofbattery)
 
     }
     console.log("Sum of highest voltages:", sumofvoltage);
+
+    
