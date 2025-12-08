@@ -1,6 +1,6 @@
 const rollsofpapers = require('./input.js')
 
-function gotothroughrollsofpapers(rollsofpapers) {
+function gotothroughrollsofpapers(rollsofpapers) { //this is a function that goes through the rolls of papers and counts the valid ones
     let countofvalidrollsofpapers = 0
     for (let i = 0; i < rollsofpapers.length; i += 1) {
         for (let j = 0; j < rollsofpapers[i].length; j += 1) {
@@ -16,7 +16,7 @@ function gotothroughrollsofpapers(rollsofpapers) {
     console.log("The count of valis rolls of papers is:", countofvalidrollsofpapers)
 }
 
-function checkrollsofpapers(rollsofpapers, i, j) {
+function checkrollsofpapers(rollsofpapers, i, j) { //that is a fhunction that chacks if the roll is valid
     let count = 0
     for (let k = i-1; k <= i+1; k++) {
         if (k>=0 && k < rollsofpapers.length){

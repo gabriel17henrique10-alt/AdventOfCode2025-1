@@ -2,12 +2,13 @@ const rollsofpapers = require('./input.js')
 
 let countofvalidrollsofpapers = 0
 let totalofcount = 0
-do{totalofcount += gotothroughrollsofpapers(rollsofpapers)
+
+do{totalofcount += gotothroughrollsofpapers(rollsofpapers) //and is this the main code that repeat the function until there is no valid rolls of papers
 }while(countofvalidrollsofpapers != 0)
 
 console.log("The total count of valis rolls of papers is:", totalofcount)
 
-function gotothroughrollsofpapers(rollsofpapers) {
+function gotothroughrollsofpapers(rollsofpapers) { //this is a function that goes through the rolls of papers and counts the valid ones
     countofvalidrollsofpapers = 0
     for (let i = 0; i < rollsofpapers.length; i += 1) {
         for (let j = 0; j < rollsofpapers[i].length; j += 1) {
@@ -23,7 +24,7 @@ function gotothroughrollsofpapers(rollsofpapers) {
     removevalidrollsofpapers(rollsofpapers)
     return countofvalidrollsofpapers
 }
-function checkrollsofpapers(rollsofpapers, i, j) {
+function checkrollsofpapers(rollsofpapers, i, j) { //that is a fhunction that chacks if the roll is valid
     let count = 0
     for (let k = i-1; k <= i+1; k++) {
         if (k>=0 && k < rollsofpapers.length){
@@ -41,7 +42,7 @@ function checkrollsofpapers(rollsofpapers, i, j) {
     }
     return false
 }
-function removevalidrollsofpapers(rollsofpapers) {
+function removevalidrollsofpapers(rollsofpapers) { //thin function remove te valid ones
     for(rolls in rollsofpapers){
             rollsofpapers[rolls] = rollsofpapers[rolls].map(function(remove){
             return remove.replace('x', '.')
